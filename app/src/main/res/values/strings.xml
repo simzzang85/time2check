@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Time2Check</string>
+    <string name="real_id">ca-app-pub-5527371243503810/3052770999</string>
+    <string name="test_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="method">How To Use</string>
+    <string name="method_text1"> - Enter an address which you want to search into the address bar. The server time will be synchronized shortly.</string>
+    <string name="method_text2"> - It might have difference about decimal point seconds from source web server time. But we have tried to adjust time to make it real time.</string>
+    <string name="method_text3"> - You can easily call url from your favorite list.</string>
+    <string name="url_placeholder">Input URL here...</string>
+    <string name="timezone">Timezone</string>
+</resources>
