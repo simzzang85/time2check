@@ -18,7 +18,6 @@ public class IntroActivity extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(intent);
-                onDestroy();
             }
         }, 1000);
     }

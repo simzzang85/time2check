@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         setContentView(R.layout.activity_main);
@@ -127,7 +128,14 @@ public class MainActivity extends AppCompatActivity {
                     }else{
                         CheckBox chkBox = findViewById(R.id.chkFavorite);
                         if(chkBox.isChecked()){
-                            boolean aa = tc.insertServerUrl (editText.getText().toString(), editText.getText().toString());
+                            boolean aa;
+                            if(tc.numberOfRows() < 10){
+                                aa = tc.insertServerUrl (editText.getText().toString(), editText.getText().toString());
+                            }else{
+                                aa = false;
+                                Toast.makeText(MainActivity.this, "FAILED TO INSERT. FAVORITE IS ONLY UP TO 10." , Toast.LENGTH_SHORT).show();
+                            }
+                            //boolean aa = tc.insertServerUrl (editText.getText().toString(), editText.getText().toString());
                             if(aa == false){
                                 Log.d("Insert result::::::::","FAILED TO INSERT");
                             }

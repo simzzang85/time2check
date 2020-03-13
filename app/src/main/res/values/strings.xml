@@ -6,7 +6,7 @@
     <string name="method">How To Use</string>
     <string name="method_text1"> - Enter an address which you want to search into the address bar. The server time will be synchronized shortly.</string>
     <string name="method_text2"> - It might have difference about decimal point seconds from source web server time. But we have tried to adjust time to make it real time.</string>
-    <string name="method_text3"> - You can easily call url from your favorite list.</string>
+    <string name="method_text3"> - You can easily call url from your favorite list. Currently, Only English option works.</string>
     <string name="url_placeholder">Input URL here...</string>
     <string name="timezone">Timezone</string>
 </resources>
